@@ -10,7 +10,8 @@ module.exports = function(app) {
 
     apiTrain = function (req, res) {
         console.log(req.body);
-        res.send(req.body);
+        res.send("Aprendido!" + req.body);
+
 
         var train = new Train({
             text: req.body.text,
